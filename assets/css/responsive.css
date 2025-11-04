@@ -1,0 +1,207 @@
+@media (max-width:1199px) {
+    .hero-img img {
+        position: relative;
+        max-width: 350px;
+        width: 100%;
+        object-fit: cover;
+        left: -78px;
+    }
+
+    .service-single h2 {
+        font-size: 30px;
+    }
+
+    .team-con h2 {
+        font-size: 28px;
+    }
+
+    .look-img::before {
+        width: 305px;
+        height: 129px;
+        top: -94px;
+        left: -32px;
+    }
+}
+
+@media (max-width:991px) {
+    .hero-img img {
+        left: 230px;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .cource-content .ctitle {
+        font-size: 20px;
+    }
+
+    .cource-shedeul span {
+        font-size: 12px;
+    }
+
+    .team-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .team-con h2 {
+        margin-bottom: 0;
+
+    }
+
+    .team-con p {
+        margin-bottom: 15px;
+    }
+
+    .fanfact-sin {
+        margin-bottom: 25px;
+    }
+
+    .team-con h2 {
+        font-size: 40px;
+    }
+
+    .owl-prev {
+        left: -20px;
+    }
+
+    .owl-next {
+        right: -20px;
+    }
+
+    .blog-single h2 a {
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+    .look-con h2 {
+        font-size: 35px;
+    }
+
+    .look-con p {
+        font-size: 17px;
+    }
+
+    .look-img::before {
+        width: 231px;
+        height: 86px;
+        top: -62px;
+        left: -47px;
+    }
+
+    .widget-about .f-contact {
+        margin-top: 10px;
+    }
+
+    .widget {
+        margin-bottom: 20px;
+    }
+
+    .copyright-text p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .hero-img img {
+        left: 100px;
+    }
+
+    .hero-img::after {
+        top: 24px;
+        right: 0px;
+    }
+
+    .hero-img img {
+        top: 62px;
+    }
+
+    .hero-section {
+        margin-bottom: 60px;
+    }
+
+    .team-sectio {
+        padding: 919px 0 0;
+    }
+
+    .cource-content .ctitle {
+        font-size: 24px;
+    }
+
+    .cource-shedeul span {
+        font-size: 15px;
+    }
+
+
+
+    .owl-next {
+        right: -20px;
+    }
+
+    .owl-prev {
+        left: -20px;
+    }
+
+    .blog-single h2 a {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .look-con h2 {
+        font-size: 30px;
+    }
+
+    .look-con p {
+        font-size: 12px;
+    }
+
+    .look-img::before {
+        width: 150px;
+        height: 63px;
+        top: -84px;
+        left: 263px;
+    }
+
+    .widget-social a {
+        margin-right: 10px;
+    }
+
+    .widget-courses {
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width:575px) {
+    .hero-img::after {
+        width: 548px;
+        height: 370px;
+        top: 147px;
+        right: 0;
+    }
+
+    .hero-img img {
+        left: 49px;
+    }
+
+    .owl-prev {
+        left: 1px;
+    }
+
+    .owl-next {
+        right: 1px;
+    }
+
+    .widget-newsLetter form button {
+        right: 67px;
+    }
+
+    .copyright-text p {
+        font-size: 6px;
+    }
+}
