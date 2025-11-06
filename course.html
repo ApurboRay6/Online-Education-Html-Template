@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onlinedu</title>
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.png" type="image/x-icon">
+    <!-- All Css Files  -->
+    <link rel="stylesheet" href="assets/fonts/Inter/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md ">
+            <div class="container ">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve" width="26" height="26">
+                        <g>
+                            <path
+                                d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z" />
+                            <path
+                                d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z" />
+                            <path
+                                d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z" />
+                        </g>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link actives" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                                    stroke="#FDFDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu  dropdown-menu-end">
+                            <form class="search-ariya-form  d-flex align-items-center gap-2 " action="">
+                                <input class="theme-input bg-transparent" type="search" placeholder="Search...">
+                                <button class="submit-btn" type="submit">Go</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="login-btn"><a href="#"> Login</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cource-home-Pages">
+        <!-- ---------------START HERO SECTION --------------->
+        <section class="course-section">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="course-content">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">Home</a>
+
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"> All Courses</a>
+                                </li>
+
+                            </ul>
+                            <h2 class="page-title">All Courses</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="courseView-items d-flex justify-content-md-end  justify-content-sm-start  ">
+                            <nav>
+                                <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link " id="grid-tab" data-bs-toggle="pill"
+                                            data-bs-target="#grid" type="button" role="tab" aria-controls="grid"
+                                            aria-selected="true">
+                                            <span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1.29337 6.69998C0.938808 6.69998 0.634608 6.56889 0.380775 6.30673C0.126925 6.04454 0 5.7423 0 5.4V1.29998C0 0.946009 0.128392 0.640859 0.385175 0.384526C0.641942 0.128176 0.947608 0 1.30217 0H5.4066C5.76117 0 6.06537 0.128176 6.31922 0.384526C6.57306 0.640859 6.69997 0.946009 6.69997 1.29998V5.4C6.69997 5.7423 6.57159 6.04454 6.31482 6.30673C6.05806 6.56889 5.75239 6.69998 5.39782 6.69998H1.29337ZM1.29337 15.8C0.938808 15.8 0.634608 15.6716 0.380775 15.4148C0.126925 15.158 0 14.8523 0 14.4978V10.3933C0 10.0388 0.128392 9.73458 0.385175 9.48073C0.641942 9.22689 0.947608 9.09997 1.30217 9.09997H5.4066C5.76117 9.09997 6.06537 9.22836 6.31922 9.48513C6.57306 9.74189 6.69997 10.0476 6.69997 10.4021V14.5066C6.69997 14.8611 6.57159 15.1653 6.31482 15.4192C6.05806 15.673 5.75239 15.8 5.39782 15.8H1.29337ZM10.4 6.69998C10.0576 6.69998 9.75541 6.56889 9.49322 6.30673C9.23106 6.04454 9.09997 5.7423 9.09997 5.4V1.29998C9.09997 0.946009 9.23106 0.640859 9.49322 0.384526C9.75541 0.128176 10.0576 0 10.4 0H14.5C14.8539 0 15.1591 0.128176 15.4154 0.384526C15.6718 0.640859 15.8 0.946009 15.8 1.29998V5.4C15.8 5.7423 15.6718 6.04454 15.4154 6.30673C15.1591 6.56889 14.8539 6.69998 14.5 6.69998H10.4ZM10.4 15.8C10.0576 15.8 9.75541 15.6716 9.49322 15.4148C9.23106 15.158 9.09997 14.8523 9.09997 14.4978V10.3933C9.09997 10.0388 9.23106 9.73458 9.49322 9.48073C9.75541 9.22689 10.0576 9.09997 10.4 9.09997H14.5C14.8539 9.09997 15.1591 9.22836 15.4154 9.48513C15.6718 9.74189 15.8 10.0476 15.8 10.4021V14.5066C15.8 14.8611 15.6718 15.1653 15.4154 15.4192C15.1591 15.673 14.8539 15.8 14.5 15.8H10.4ZM1.29997 5.4H5.4V1.29998H1.29997V5.4ZM10.4 5.4H14.5V1.29998H10.4V5.4ZM10.4 14.5H14.5V10.4H10.4V14.5ZM1.29997 14.5H5.4V10.4H1.29997V14.5Z"
+                                                        fill="#353535" />
+                                                </svg>
+                                            </span>
+                                            Grid
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="list-tab" data-bs-toggle="pill"
+                                            data-bs-target="#list" type="button" role="tab" aria-controls="list"
+                                            aria-selected="false">
+                                            <span>
+                                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M3.84612 1.31406C3.66904 1.31406 3.52061 1.25415 3.40083 1.13431C3.28104 1.01446 3.22115 0.865965 3.22115 0.688812C3.22115 0.511646 3.28104 0.363236 3.40083 0.243584C3.52061 0.123931 3.66904 0.0641034 3.84612 0.0641034H13.9583C14.1354 0.0641034 14.2838 0.124021 14.4036 0.243855C14.5234 0.363702 14.5833 0.512201 14.5833 0.689354C14.5833 0.866521 14.5234 1.01493 14.4036 1.13458C14.2838 1.25424 14.1354 1.31406 13.9583 1.31406H3.84612ZM3.84612 4.6474C3.66904 4.6474 3.52061 4.58748 3.40083 4.46765C3.28104 4.3478 3.22115 4.1993 3.22115 4.02215C3.22115 3.84498 3.28104 3.69657 3.40083 3.57692C3.52061 3.45726 3.66904 3.39744 3.84612 3.39744H13.9583C14.1354 3.39744 14.2838 3.45735 14.4036 3.57719C14.5234 3.69703 14.5833 3.84553 14.5833 4.02269C14.5833 4.19985 14.5234 4.34826 14.4036 4.46792C14.2838 4.58757 14.1354 4.6474 13.9583 4.6474H3.84612ZM3.84612 7.98073C3.66904 7.98073 3.52061 7.92081 3.40083 7.80098C3.28104 7.68113 3.22115 7.53263 3.22115 7.35548C3.22115 7.17831 3.28104 7.0299 3.40083 6.91025C3.52061 6.7906 3.66904 6.73077 3.84612 6.73077H13.9583C14.1354 6.73077 14.2838 6.79069 14.4036 6.91052C14.5234 7.03037 14.5833 7.17887 14.5833 7.35602C14.5833 7.53319 14.5234 7.6816 14.4036 7.80125C14.2838 7.9209 14.1354 7.98073 13.9583 7.98073H3.84612ZM0.691062 1.37817C0.496368 1.37817 0.332521 1.31232 0.199521 1.18062C0.0665069 1.04893 0 0.885736 0 0.691041C0 0.496361 0.0658471 0.332514 0.197542 0.1995C0.329236 0.0664998 0.49243 0 0.687125 0C0.881805 0 1.04565 0.0658471 1.17867 0.197542C1.31168 0.329236 1.37819 0.49243 1.37819 0.687125C1.37819 0.881805 1.31233 1.04565 1.18062 1.17867C1.04893 1.31167 0.885743 1.37817 0.691062 1.37817ZM0.691062 4.7115C0.496368 4.7115 0.332521 4.64565 0.199521 4.51396C0.0665069 4.38226 0 4.21907 0 4.02437C0 3.82969 0.0658471 3.66585 0.197542 3.53283C0.329236 3.39983 0.49243 3.33333 0.687125 3.33333C0.881805 3.33333 1.04565 3.39918 1.17867 3.53087C1.31168 3.66257 1.37819 3.82576 1.37819 4.02046C1.37819 4.21514 1.31233 4.37899 1.18062 4.512C1.04893 4.645 0.885743 4.7115 0.691062 4.7115ZM0.691062 8.04483C0.496368 8.04483 0.332521 7.97899 0.199521 7.84729C0.0665069 7.7156 0 7.5524 0 7.35771C0 7.16303 0.0658471 6.99918 0.197542 6.86617C0.329236 6.73317 0.49243 6.66667 0.687125 6.66667C0.881805 6.66667 1.04565 6.73251 1.17867 6.86421C1.31168 6.9959 1.37819 7.1591 1.37819 7.35379C1.37819 7.54847 1.31233 7.71232 1.18062 7.84533C1.04893 7.97833 0.885743 8.04483 0.691062 8.04483Z"
+                                                        fill="#353535" />
+                                                </svg>
+                                                List
+                                            </span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        <!-- ---------------ALL COURSE SECTION --------------->
+        <section class="allCourse-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="sidebar-ariya">
+                            <div class=" sidebar-search">
+                                <form action="">
+                                    <input type="search" placeholder="Search...">
+                                    <button type="submit">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z"
+                                                stroke="#787878" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="sidebar-cate">
+                                <h3 class="sidebar-title">Categories</h3>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);">Art & Humanities </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Graphic Design </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Technology </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Content Writing </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Video Editing</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Photoshop</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Web Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Laravel</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Photoshop</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Canva </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Management </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Data Science </a>
+                                    </li>
+
+                                    <li class="show-more">
+                                        <a href="javascript:void(0);">Show more </a>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </li>
+                                    <ul class="cate-more">
+                                        <li><a href="javascript:void(0);">Canva</a></li>
+                                        <li><a href="javascript:void(0);">Management</a></li>
+                                        <li><a href="javascript:void(0);">Data Science</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+
+                            <div class="sidebar-instructors">
+                                <h3 class="sidebar-title">Instructors</h3>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="instructor1" name="instructor" value="David Backham">
+                                        <label for="instructor1">David Backham</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="instructor2" name="instructor" value="Lana Ross">
+                                        <label for="instructor2">Lana Ross</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="instructor3" name="instructor" value="John Anderson">
+                                        <label for="instructor3">John Anderson</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="instructor4" name="instructor" value="William Mendy">
+                                        <label for="instructor4">William Mendy</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-price">
+                                <h3 class="sidebar-title">Prices</h3>
+                                <div id="slider-range"></div>
+                                <p class="price-range-line">
+                                    <label for="amount">Price range:</label>
+                                    <input type="text" id="amount" readonly="">
+                                </p>
+                            </div>
+                            <div class="sidebar-ratings">
+                                <h3 class="sidebar-title">Ratings</h3>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="rating1" name="rating" value="4 & up">
+                                        <label for="rating1">
+                                            <span>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="rating1" name="rating" value="4 & up">
+                                        <label for="rating1">
+                                            <span>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="rating1" name="rating" value="4 & up">
+                                        <label for="rating1">
+                                            <span>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="rating1" name="rating" value="4 & up">
+                                        <label for="rating1">
+                                            <span>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="rating1" name="rating" value="4 & up">
+                                        <label for="rating1">
+                                            <span>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-xl-8 col-lg-8 col-md-6 col-sm-12">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ">
+                                        <div class="cource-single all-course-single">
+                                            <div class="cource-thumb ">
+                                                <img src="assets/img/Courses/Motion Graphic Course.png" alt="">
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="cource-content all-course-content">
+                                                <div
+                                                    class="cource-meta d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex gap-1 align-items-center mb-4">
+                                                        <img src="assets/img/Courses/Lesile.png" alt="">
+                                                        <a class="parson" href="javascript:void:(0);">Lesile
+                                                            Alexen</a>
+                                                    </div>
+                                                    <p>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        4.5
+                                                        <span class="Review">(Review)</span>
+                                                    </p>
+                                                </div>
+                                                <div class="cource-shedeul all-course-shedeul ">
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/beginner.svg" alt=""> Beginner
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/lesson.svg" alt=""> Lesson:1
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/Hours.svg" alt=""> Hours:11
+                                                    </span>
+                                                </div>
+                                                <h2 class="ctitle  all-course-title">
+                                                    <a href="javascript:void(0);">
+                                                        JavaScript Course
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="cource-footer d-flex justify-content-between align-items-center">
+                                                    <h2>$100.00</h2>
+                                                    <a class="eduBtn d-inline-flex gap-2" href="javascript:void:(0);">
+                                                        Comper
+                                                        <img src="assets/img/Courses/compare.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ">
+                                        <div class="cource-single all-course-single">
+                                            <div class="cource-thumb ">
+                                                <img src="assets/img/Courses/Motion Graphic Course.png" alt="">
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="cource-content all-course-content">
+                                                <div
+                                                    class="cource-meta d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex gap-1 align-items-center mb-4">
+                                                        <img src="assets/img/Courses/Lesile.png" alt="">
+                                                        <a class="parson" href="javascript:void:(0);">Lesile
+                                                            Alexen</a>
+                                                    </div>
+                                                    <p>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        4.5
+                                                        <span class="Review">(Review)</span>
+                                                    </p>
+                                                </div>
+                                                <div class="cource-shedeul all-course-shedeul ">
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/beginner.svg" alt=""> Beginner
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/lesson.svg" alt=""> Lesson:1
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/Hours.svg" alt=""> Hours:11
+                                                    </span>
+                                                </div>
+                                                <h2 class="ctitle  all-course-title">
+                                                    <a href="javascript:void(0);">
+                                                        JavaScript Course
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="cource-footer d-flex justify-content-between align-items-center">
+                                                    <h2>$100.00</h2>
+                                                    <a class="eduBtn d-inline-flex gap-2" href="javascript:void:(0);">
+                                                        Comper
+                                                        <img src="assets/img/Courses/compare.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ">
+                                        <div class="cource-single all-course-single">
+                                            <div class="cource-thumb ">
+                                                <img src="assets/img/Courses/Motion Graphic Course.png" alt="">
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="cource-content all-course-content">
+                                                <div
+                                                    class="cource-meta d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex gap-1 align-items-center mb-4">
+                                                        <img src="assets/img/Courses/Lesile.png" alt="">
+                                                        <a class="parson" href="javascript:void:(0);">Lesile
+                                                            Alexen</a>
+                                                    </div>
+                                                    <p>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        4.5
+                                                        <span class="Review">(Review)</span>
+                                                    </p>
+                                                </div>
+                                                <div class="cource-shedeul all-course-shedeul ">
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/beginner.svg" alt=""> Beginner
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/lesson.svg" alt=""> Lesson:1
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/Hours.svg" alt=""> Hours:11
+                                                    </span>
+                                                </div>
+                                                <h2 class="ctitle  all-course-title">
+                                                    <a href="javascript:void(0);">
+                                                        JavaScript Course
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="cource-footer d-flex justify-content-between align-items-center">
+                                                    <h2>$100.00</h2>
+                                                    <a class="eduBtn d-inline-flex gap-2" href="javascript:void:(0);">
+                                                        Comper
+                                                        <img src="assets/img/Courses/compare.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ">
+                                        <div class="cource-single all-course-single">
+                                            <div class="cource-thumb ">
+                                                <img src="assets/img/Courses/Motion Graphic Course.png" alt="">
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="cource-content all-course-content">
+                                                <div
+                                                    class="cource-meta d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex gap-1 align-items-center mb-4">
+                                                        <img src="assets/img/Courses/Lesile.png" alt="">
+                                                        <a class="parson" href="javascript:void:(0);">Lesile
+                                                            Alexen</a>
+                                                    </div>
+                                                    <p>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        4.5
+                                                        <span class="Review">(Review)</span>
+                                                    </p>
+                                                </div>
+                                                <div class="cource-shedeul all-course-shedeul ">
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/beginner.svg" alt=""> Beginner
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/lesson.svg" alt=""> Lesson:1
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/Hours.svg" alt=""> Hours:11
+                                                    </span>
+                                                </div>
+                                                <h2 class="ctitle  all-course-title">
+                                                    <a href="javascript:void(0);">
+                                                        JavaScript Course
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="cource-footer d-flex justify-content-between align-items-center">
+                                                    <h2>$100.00</h2>
+                                                    <a class="eduBtn d-inline-flex gap-2" href="javascript:void:(0);">
+                                                        Comper
+                                                        <img src="assets/img/Courses/compare.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                        <div
+                                            class="cource-single all-course-single d-flex  justify-content-center gap-2">
+                                            <div class="cource-thumb ">
+                                                <img src="assets/img/Courses/Motion Graphic Course.png" alt="">
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="cource-content all-course-content">
+                                                <div
+                                                    class="cource-meta d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex gap-1 align-items-center mb-4">
+                                                        <img src="assets/img/Courses/Lesile.png" alt="">
+                                                        <a class="parson" href="javascript:void:(0);">Lesile
+                                                            Alexen</a>
+                                                    </div>
+                                                    <p>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        4.5
+                                                        <span class="Review">(Review)</span>
+                                                    </p>
+                                                </div>
+                                                <div class="cource-shedeul all-course-shedeul ">
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/beginner.svg" alt=""> Beginner
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/lesson.svg" alt=""> Lesson:1
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/Hours.svg" alt=""> Hours:11
+                                                    </span>
+                                                </div>
+                                                <h2 class="ctitle  all-course-title">
+                                                    <a href="javascript:void(0);">
+                                                        JavaScript Course
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="cource-footer d-flex justify-content-between align-items-center">
+                                                    <h2>$100.00</h2>
+                                                    <a class="eduBtn d-inline-flex gap-2" href="javascript:void:(0);">
+                                                        Comper
+                                                        <img src="assets/img/Courses/compare.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                        <div
+                                            class="cource-single all-course-single d-flex  justify-content-center gap-2">
+                                            <div class="cource-thumb ">
+                                                <img src="assets/img/Courses/Motion Graphic Course.png" alt="">
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="cource-content all-course-content">
+                                                <div
+                                                    class="cource-meta d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex gap-1 align-items-center mb-4">
+                                                        <img src="assets/img/Courses/Lesile.png" alt="">
+                                                        <a class="parson" href="javascript:void:(0);">Lesile
+                                                            Alexen</a>
+                                                    </div>
+                                                    <p>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        4.5
+                                                        <span class="Review">(Review)</span>
+                                                    </p>
+                                                </div>
+                                                <div class="cource-shedeul all-course-shedeul ">
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/beginner.svg" alt=""> Beginner
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/lesson.svg" alt=""> Lesson:1
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/Hours.svg" alt=""> Hours:11
+                                                    </span>
+                                                </div>
+                                                <h2 class="ctitle  all-course-title">
+                                                    <a href="javascript:void(0);">
+                                                        JavaScript Course
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="cource-footer d-flex justify-content-between align-items-center">
+                                                    <h2>$100.00</h2>
+                                                    <a class="eduBtn d-inline-flex gap-2" href="javascript:void:(0);">
+                                                        Comper
+                                                        <img src="assets/img/Courses/compare.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                        <div
+                                            class="cource-single all-course-single d-flex  justify-content-center gap-2">
+                                            <div class="cource-thumb ">
+                                                <img src="assets/img/Courses/Motion Graphic Course.png" alt="">
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="cource-content all-course-content">
+                                                <div
+                                                    class="cource-meta d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex gap-1 align-items-center mb-4">
+                                                        <img src="assets/img/Courses/Lesile.png" alt="">
+                                                        <a class="parson" href="javascript:void:(0);">Lesile
+                                                            Alexen</a>
+                                                    </div>
+                                                    <p>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        4.5
+                                                        <span class="Review">(Review)</span>
+                                                    </p>
+                                                </div>
+                                                <div class="cource-shedeul all-course-shedeul ">
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/beginner.svg" alt=""> Beginner
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/lesson.svg" alt=""> Lesson:1
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/Hours.svg" alt=""> Hours:11
+                                                    </span>
+                                                </div>
+                                                <h2 class="ctitle  all-course-title">
+                                                    <a href="javascript:void(0);">
+                                                        JavaScript Course
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="cource-footer d-flex justify-content-between align-items-center">
+                                                    <h2>$100.00</h2>
+                                                    <a class="eduBtn d-inline-flex gap-2" href="javascript:void:(0);">
+                                                        Comper
+                                                        <img src="assets/img/Courses/compare.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                        <div
+                                            class="cource-single all-course-single d-flex  justify-content-center gap-2">
+                                            <div class="cource-thumb ">
+                                                <img src="assets/img/Courses/Motion Graphic Course.png" alt="">
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="cource-content all-course-content">
+                                                <div
+                                                    class="cource-meta d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex gap-1 align-items-center mb-4">
+                                                        <img src="assets/img/Courses/Lesile.png" alt="">
+                                                        <a class="parson" href="javascript:void:(0);">Lesile
+                                                            Alexen</a>
+                                                    </div>
+                                                    <p>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        4.5
+                                                        <span class="Review">(Review)</span>
+                                                    </p>
+                                                </div>
+                                                <div class="cource-shedeul all-course-shedeul ">
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/beginner.svg" alt=""> Beginner
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/lesson.svg" alt=""> Lesson:1
+                                                    </span>
+                                                    <span class="d-inline-flex align-items-center gap-1">
+                                                        <img src="assets/img/Courses/icon/Hours.svg" alt=""> Hours:11
+                                                    </span>
+                                                </div>
+                                                <h2 class="ctitle  all-course-title">
+                                                    <a href="javascript:void(0);">
+                                                        JavaScript Course
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="cource-footer d-flex justify-content-between align-items-center">
+                                                    <h2>$100.00</h2>
+                                                    <a class="eduBtn d-inline-flex gap-2" href="javascript:void:(0);">
+                                                        Comper
+                                                        <img src="assets/img/Courses/compare.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- --------------------- fOOTER SECTION------------- -->
+    <!-- <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 ">
+                    <div class="widget widget-about">
+                        <a class="f-logo" href="">
+                            <img src="assets/img/footer/footer.png" alt="Onlinedu">
+                        </a>
+                        <p>It is a long established fact that a reader
+                            will be the distract by the read content of a
+                            page layout.</p>
+                        <div class="widget  widget-social">
+                            <a href="https://x.com/home;"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/home"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/home"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/home"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.pinterest.com/home"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                        <a class="f-contact" href="javascript:void(0);">Contact with us</a>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-6 col-sm-6">
+                    <div class="widget  widget-link">
+                        <h2 class="widget-title">Explore</h2>
+                        <ul>
+                            <li>
+                                <a href="javascript:voide(0);">Home</a>
+                            </li>
+                            <li>
+                                <a href="javascript:voide(0);">Courses</a>
+                            </li>
+                            <li>
+                                <a href="javascript:voide(0);">Blog</a>
+                            </li>
+                            <li>
+                                <a href="javascript:voide(0);">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="widget  widget-courses">
+                        <h2 class="widget-title">Subjects</h2>
+                        <ul>
+                            <li>
+                                <a href="javascript:voide(0);">IT</a>
+                            </li>
+                            <li>
+                                <a href="javascript:voide(0);">Machine Learning</a>
+                            </li>
+                            <li>
+                                <a href="javascript:voide(0);">Mobile Development</a>
+                            </li>
+                            <li>
+                                <a href="javascript:voide(0);">Web Design</a>
+                            </li>
+                            <li>
+                                <a href="javascript:voide(0);">Web Development</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="widget-info">
+                        <h2 class="widget-title">Contact info</h2>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="https://web.whatsapp.com/">
+                                    (303) 555-0105765
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:michael.mitc@example.com">
+                                    michael.mitc@example.com
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                6391 Elgin St. Celina. Delaware 10299
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget widget-newsLetter">
+                        <h2 class="widget-title">Newsletter</h2>
+                        <p>Subscribe to stay tuned for new web design and latest updates. Let's do it! </p>
+                        <form action="">
+                            <input type="search" placeholder="Email Address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="col-12">
+                    <div class="copyright-text  d-flex justify-content-between ">
+                        <ul class="d-flex justify-content-between  ">
+                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                            <li><a href="javascript:void(0);">Terms of Use</a></li>
+                            <li><a href="javascript:void(0);">Sales and Refunds</a></li>
+                            <li><a href="javascript:void(0);">Legal</a></li>
+                            <li><a href="javascript:void(0);">Site Map</a></li>
+                        </ul>
+                        <p>© 2024 Design By syncsofts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+
+
+
+    <!-- All js files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

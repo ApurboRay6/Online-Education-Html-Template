@@ -68,3 +68,33 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+document.querySelector(".show-more").addEventListener("click", function () {
+    const more = document.querySelector(".cate-more");
+    const icon = this.querySelector("i");
+    const text = this.querySelector("a");
+
+    if (more.style.display === "block") {
+        more.style.display = "none";
+        text.textContent = "Show more";
+        icon.classList.replace("fa-chevron-up", "fa-chevron-down");
+    } else {
+        more.style.display = "block";
+        text.textContent = "Show less";
+        icon.classList.replace("fa-chevron-down", "fa-chevron-up");
+    }
+});
+
+$(function () {
+    $("#slider-range").slider({
+        range: true,
+        min: 25,
+        max: 120,
+        values: [75, 300],
+        slide: function (event, ui) {
+            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        }
+    });
+    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+        " - $" + $("#slider-range").slider("values", 1));
+});
