@@ -26,6 +26,8 @@
     box-sizing: border-box
 }
 
+
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -52,15 +54,24 @@ li {
     list-style: none;
 }
 
-body {
+.index-pages {
     background-color: rgba(35, 52, 83, 1);
     font-family: 'Inter 18pt';
+}
+
+.course-page {
+    color: white;
 }
 
 header {
     margin: 40px 0;
 }
 
+.course-page-header {
+    margin: 0;
+    background-color: #F5FFF9;
+    padding: 16px 0;
+}
 
 
 .nav-link {
@@ -1155,6 +1166,21 @@ form {
 }
 
 /* ----------------------------------------------------------------------------------COURSE ALL PAGES------------------------------------------------------------------------------------------------ */
+
+.course-nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black-color);
+    padding: 8px 0;
+}
+
+
+
+.course-btn {
+    background-color: #2AC466;
+    color: var(--btn-text);
+}
+
 .cource-home-Pages {
     background-color: #FDFDFD;
 }
@@ -1411,6 +1437,10 @@ form {
     margin: 0 0 24px;
 }
 
+.all-course-single:hover {
+    background: #F5FFF9;
+}
+
 .cource-meta {
     margin-top: 16px;
 }
@@ -1439,18 +1469,57 @@ form {
     color: var(--black-color);
 }
 
-.cource-meta p {
+.all-course-content .cource-meta p {
     color: var(--black-color);
 }
 
-.cource-shedeul span {
+.all-course-content .cource-meta p span {
+    color: #2AC466;
+}
+
+.all-course-content .cource-shedeul span {
     color: var(--black-color);
 }
 
-.cource-shedeul span img {
+.all-course-content .cource-shedeul span img {
     filter: brightness(0);
 }
 
 .all-course-content .cource-footer h2 {
-    color: var(--black-color);
+    color: #2AC466;
+}
+
+.all-course-content .cource-footer .eduBtn {
+    background: #2AC466;
+    color: var(--white-color);
+}
+
+.all-course-content .cource-footer .eduBtn img {
+    filter: brightness(0) invert(1);
+}
+
+.pagination-wrapper a,
+.pagination-wrapper span {
+    height: 38px;
+    width: 38px;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    color: #787878;
+    border-radius: 8px;
+    box-shadow: 0px 8px 30px 0px #5B5B5B1F;
+
+}
+
+.pagination-wrapper a:hover,
+.pagination-wrapper .active {
+    background-color: #2AC466;
+    color: var(--white-color);
+}
+
+.course-foote .course-ft-sunbtn {
+    background-color: #2AC466;
 }
