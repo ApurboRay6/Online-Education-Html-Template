@@ -1593,35 +1593,36 @@ form {
     margin-bottom: 100px;
 }
 
+
+
+/* -----------------Course-nav-tab------------- */
 .course-menu {
     padding-left: 80px;
     margin: 0 0 32px;
 }
 
-.course-menu ul {
-    display: flex;
+.course-menu .nav-tabs {
+    border: none;
 }
 
-.course-menu ul li {
-    margin: 0 10px;
-}
-
-.course-menu ul li a {
+.course-menu .nav-tabs .nav-link {
+    border: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
     background-color: #EAFBF1;
     border-radius: 8px;
-    color: #000000;
-    padding: 10px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: 1s;
+}
+
+.course-menu .nav-tabs .active,
+.course-menu .nav-tabs .nav-link:hover {
+    background-color: #2AC466;
+    color: #FDFDFD;
 }
 
 
-.course-menu ul li a:hover,
-.course-menu ul li .active {
-    background-color: #28a745;
-    color: var(--white-color);
-}
+/* -----------------About-Course------------------- */
 
 .About-Course-wreper {
     margin: 0 0 32px;
@@ -1850,4 +1851,113 @@ form {
     color: #6B7385;
     font-weight: 500;
     font-size: 12px;
+}
+
+/* --------------------Course-Notes ----------------*/
+.CourseNotes .Course-secTitle {
+    margin: 0;
+}
+
+.CourseNotes .Course-subTitle {
+    color: black;
+    margin: 4px 0 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.Notes-items ul li,
+.FAQ-items ul li {
+    color: #353535;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 655px;
+    margin: 12px 0 12px;
+}
+
+
+.Notes-items ul li i,
+.FAQ-items ul li i {
+    color: #1E7942;
+    font-size: 10px;
+}
+
+.FAQ-items .faq-ans {
+    display: block;
+    color: #555;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.FAQ-items .faq-ans span {
+    font-style: italic;
+    color: #333;
+    font-weight: normal;
+}
+
+.review-box {
+    padding: 15px 0;
+    margin: 24px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.user-info {
+    flex: 1;
+}
+
+.user-info h4 {
+    color: #000000;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.review-date {
+    color: #353535;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.review-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
+    margin: 12px 0;
+}
+
+.review-actions {
+    display: flex;
+    gap: 20px;
+    color: #353535;
+    font-size: 16px;
+}
+
+
+.review-actions i,
+.review-actions span {
+    color: #353535;
+    margin-left: 3px;
 }

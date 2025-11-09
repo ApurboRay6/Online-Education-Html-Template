@@ -105,6 +105,17 @@
     .copyright-text p {
         font-size: 10px;
     }
+
+    /*------------------------ course index ----------------------------*/
+    .course-page .course-menu {
+        padding-left: 0;
+        margin: 0 0 32px;
+    }
+
+    .learn-items ul li {
+        font-size: 11px;
+    }
+
 }
 
 @media (max-width:767px) {
@@ -175,6 +186,19 @@
         padding-left: 0;
     }
 
+    /*------------------------ course index ----------------------------*/
+
+
+    .course-menu .nav-tabs .nav-link {
+
+        font-size: 12px;
+        margin: 0 10px;
+    }
+
+    .learn-items ul li {
+        font-size: 13px;
+    }
+
 }
 
 @media (max-width:575px) {
@@ -203,5 +227,15 @@
 
     .copyright-text p {
         font-size: 6px;
+    }
+
+    /*------------------------ course index ----------------------------*/
+    .course-page .course-menu {
+        padding-left: 0;
+        margin: 0 0 32px;
+    }
+
+    .learn-items ul li {
+        font-size: 11px;
     }
 }
