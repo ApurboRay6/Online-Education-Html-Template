@@ -1181,7 +1181,8 @@ form {
     color: var(--btn-text);
 }
 
-.cource-home-Pages {
+.cource-home-Pages,
+.Instructors-home-Pages {
     background-color: #FDFDFD;
 }
 
@@ -1197,7 +1198,8 @@ form {
     z-index: 1;
 }
 
-.course-content ul li {
+.course-content ul li,
+.Instructors-content ul li {
     display: inline-flex;
     align-items: center;
     font-size: 16px;
@@ -1533,7 +1535,8 @@ form {
     z-index: 1;
 }
 
-.course-hero-content {
+.course-hero-content,
+.Instructors-hero-content {
     margin-top: 65px;
 }
 
@@ -1960,4 +1963,64 @@ form {
 .review-actions span {
     color: #353535;
     margin-left: 3px;
+}
+
+
+
+/* -----------------------------------------------------------------INSTROCTOR INDEX ------------------------------------------------------------------- */
+.Instructors-hero-section {
+    background: url('../../assets/img/Instructors/Instructors-hero-section.jpg') no-repeat center center / cover;
+    padding: 70px 0 135px;
+    position: relative;
+    z-index: 1;
+}
+
+.instructors-section {
+    position: relative;
+    margin: -85px 0 100px;
+    z-index: 9;
+}
+
+.instructors-profile {
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 8px 0px #3232470F;
+    margin: 0 0 24px;
+}
+
+.instructors-profile {
+    width: 100%;
+    max-width: 425px;
+    height: auto;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px #3232470F;
+}
+
+.instructors-profile .instr-profile-pick {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 11;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructors-profile .instr-profile-pick img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.instructors-profile .instructors-detil {
+    background-color: #1E1E1E;
+    border-radius: 0 0 10px 10px;
+    padding: 14px 0;
+    text-align: center;
+}
+
+.instructors-profile .instructors-detil p,
+.instructors-profile .instructors-detil h4 {
+    margin: 0;
 }
