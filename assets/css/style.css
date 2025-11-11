@@ -70,6 +70,8 @@ header {
 .course-page-header {
     margin: 0;
     background-color: #F5FFF9;
+    box-shadow: 0px 4px 8px 0px #3232470F;
+    box-shadow: 0px 4px 4px 0px #32324714;
     padding: 16px 0;
 }
 
@@ -1199,7 +1201,8 @@ form {
 }
 
 .course-content ul li,
-.Instructors-content ul li {
+.Instructors-content ul li,
+.Inst-profile-content ul li {
     display: inline-flex;
     align-items: center;
     font-size: 16px;
@@ -2023,4 +2026,201 @@ form {
 .instructors-profile .instructors-detil p,
 .instructors-profile .instructors-detil h4 {
     margin: 0;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------INSTRUCTORS PROFILES INSDEX-------------------------------------------------------------------------- */
+
+.Instructors-profile-hero-section {
+    background-color: #F5FFF9;
+    position: relative;
+    z-index: 1;
+}
+
+.inst-profile-section {
+    position: relative;
+    padding: 0 0 120px;
+    margin-top: -98px;
+    z-index: 9;
+}
+
+.Instructors-profile-hero-section .Inst-profile-content {
+    padding: 70px 0 165px;
+}
+
+.Inst-profile-content ul li {
+    color: #787878;
+}
+
+.Inst-profile-content ul li .active,
+.Inst-profile-content ul li i {
+    color: #000000;
+}
+
+/* Card Container */
+.instr-profile img {
+    max-width: 100%;
+}
+
+.instr-profile .inst-info {
+    margin: 16px 0 0;
+}
+
+.inst-contact-Delails h6,
+.instr-soclal-media h6 {
+    color: #353535;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inst-contact-Delails p,
+.inst-contact-Delails a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
+    margin: 8px 0 0;
+}
+
+.inst-contact-Delails a {
+    color: #1E7942;
+    text-decoration: underline;
+}
+
+
+.inst-info .instr-soclal-media a {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #4B4B4B;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 4px;
+}
+
+.instr-soclal-media a i {
+    color: #353535;
+}
+
+/* -----------------------------------------Lead-Instrs-all-details -----------------------------------------------*/
+
+.Lead-Instrs-all-details h4,
+.teaching-philosophy h4 {
+    color: #192335;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 16px;
+}
+
+.Lead-Instrs-all-details h6 {
+    color: #192335;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.teaching-philosophy {
+    max-width: 1000px;
+}
+
+.course-Instrs-all-details-menu {
+    margin: 24px 0 0;
+}
+
+.course-Instrs-all-details-menu .nav-tabs {
+    border: none;
+    margin: 0;
+}
+
+.course-Instrs-all-details-menu .nav-tabs .nav-link {
+    border: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
+    background-color: #EAFBF1;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 0 24px 0 0px;
+}
+
+.course-Instrs-all-details-menu .nav-tabs .active,
+.course-Instrs-all-details-menu .nav-tabs .nav-link:hover {
+    background-color: #2AC466;
+    color: var(--white-color);
+}
+
+
+
+.tab-content-About .insrur-secTitle,
+.tab-content-Experience .insrur-secTitle,
+.tab-content-Reviews .insrur-secTitle,
+.tab-content-Education .insrur-secTitle,
+.tab-content-Availability .insrur-secTitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #353535;
+    margin: 30px 0 8px;
+}
+
+
+.tab-content .tab-content-About p {
+    color: #353535;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 840px;
+}
+
+.job {
+    margin-top: 30px;
+}
+
+.job .job-title {
+    color: #353535;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.job .job-company,
+.teaching-philosophy p,
+.tab-content-Reviews p {
+    color: #353535;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.job .job-desc {
+    color: #353535;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 440px;
+}
+
+
+.teaching-philosophy {
+    margin: 60px 0 0;
+
+}
+
+.tab-content-Reviews p,
+.availability p {
+    font-style: italic;
+    max-width: 500px;
+}
+
+.education-item i {
+    color: #1E7942;
+    font-size: 24px;
+    align-items: center;
+}
+
+.education-item h5 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #353535;
+}
+
+.education-item p,
+.availability p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #353535;
 }
